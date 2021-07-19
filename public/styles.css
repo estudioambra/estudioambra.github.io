@@ -1,0 +1,861 @@
+@import url("fonts/fontStyle.css");
+
+body {
+    overflow-x: hidden;
+    background-color: #EEF1E2;
+    font-family: 'Gotham';
+}
+
+.masthead{
+    padding: 150px;
+    background-image: url("img/backgroundHeader.png");
+    background-repeat:no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50rem;
+}
+
+
+#tituloHeader{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    max-width: 1fr;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    margin: 1rem;
+    font-family: 'Gotham Book';
+
+}
+
+#parrafoHeader{
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    max-width: 40rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin: 1rem;
+    font-family: 'Gotham Book';
+}
+
+.btn-warning{
+    background-color: #EEF1E2;
+    color: black;
+    font-weight: bolder;
+    margin-left: 2rem;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-color:#EEF1E2;
+}
+
+.btn-primary:hover{
+    background-color: #E3AA15;
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar{
+    background-color: #EEF1E2;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar img{
+    max-width: 80%;
+    margin-left: auto;
+}
+
+#navbarLinks{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbarRRSS{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+ul.navbar-nav a:hover {
+    color: #E3AA15 !important;
+}
+
+.filosofia-container {
+    background-color: #EEF1E2;
+    padding: 7rem 10rem;
+}
+
+.filosofia-container h1 {
+    padding-bottom: 48px;
+    font-weight: normal;
+    font-size: 50px;
+    font-family: 'Gotham Book';
+    font-weight: bold;
+}
+
+.filosofia-container p {
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Gotham Book';
+}
+
+#h1coleccion{
+    padding: 2rem 6rem;
+    font-weight: normal;
+    font-size: 50px;
+    font-family: 'Gotham Book';
+}
+
+.coleccion-container {
+    background-color: #FFFFFF;
+}
+
+#contenedorNovedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.novedades-container h1 {
+    padding-bottom: 48px;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.newsletter-wrapper {
+    padding: 0rem 7rem;
+    background-color: #64664E;
+}
+
+.newsletter-container {
+    padding-top: 80px; padding-bottom: 80px;
+}
+
+.newsletter-text {
+    color: #FFFFFF;
+    padding-right: 25px;
+    font-family: 'Gotham Book';
+}
+
+.newsletter-title {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-family: 'Gotham Book';
+}
+
+.newsletter-form {
+    padding-left: 50px;
+}
+
+.form-control {
+    padding: 3px 15px;
+}
+
+.form-control:focus {
+    box-shadow: none!important;
+    border-color: #E3AA15;
+}
+
+.newsletter-group {
+    display: flex;
+}
+
+.newsletter-button {
+    background:#18191F;
+    padding: 6px 80px;
+    color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.newsletter-button:hover {
+    background: #E3AA15;
+}
+
+.footer {
+    padding: 0rem 7rem;
+    background-color: #EEF1E2;
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo {
+    padding-top: 24px;
+}
+
+.footer img {
+    width: 15vh;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #E3AA15;
+}
+
+.links-wrapper {
+    padding: 0vw 2vw;
+}
+
+.links-container {
+    padding-top: 48px;
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+.hr-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+hr.divider {
+    border-top: 2px solid rgb(0, 0, 0);
+    background: #000000;
+    opacity: 0.2;
+    width: 100%;
+}
+
+hr.top {
+    display: none;
+}
+
+hr.bottom {
+    display: block;
+}
+
+.copyright {
+    font-size: small;
+}
+
+.social {
+    display: block;
+}
+
+.scroll-top-button {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.modal-content {
+    border: none;
+    background-color: transparent;
+    flex-direction: inherit;
+    justify-content: center!important;
+}
+
+.card {
+    border: 0px;
+}
+
+.modal-img {
+    width: auto;
+    height: 60vh;
+    object-fit: cover;
+    border-top-left-radius: 5px!important;
+    border-top-right-radius: 5px!important;
+    border-bottom-left-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+
+.img-fluid{
+    filter: contrast(65%);
+    border: solid 4px transparent;
+    cursor: pointer;
+}
+
+/* .img-fluid:hover{
+    border-color: #ffbe19;
+} */
+
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: white;
+    font-size: 36px;
+    font-family: 'Gotham';
+    font-weight: bolder;
+}
+
+.subtop-left{
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    color: white;
+    font-family: 'Gotham book';
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 35px;
+    right: 16px;
+    color: white;
+}
+
+.bottom-modal{
+    position: absolute;
+    bottom: 15px;
+    right: 16px;
+    color: #E3AA15;
+}
+
+.img-producto{
+    border-radius: 15px;
+}
+
+/* M E D I A    Q U E R I E S */
+
+
+
+/* INICIO MQ 1025 PX */
+
+@media screen and (max-width: 1025px){
+
+    .header-text {
+        padding-right: 30vw;
+    }
+
+    #tituloHeader {
+        padding-top: 0rem;
+    }
+
+    #parrafoHeader {
+        font-size: 25px;
+        padding-top: 0.5rem;
+    }
+
+
+    .top-left {
+        position: absolute;
+        top: 6px;
+        left: 12px;
+        color: white;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    .subtop-left {
+        position: absolute;
+        top: 44px;
+        left: 12px;
+        color: white;
+        font-size: 27px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 37px;
+        right: 15px;
+        color: white;
+    }
+
+    #Kart {
+      height: 35px;
+    }
+}
+
+/* FIN MQ 2025px */
+
+/* INICIO MQ 992 */
+
+@media screen and (max-width: 992px){
+
+    #Mainnav{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .navbar-collapse{
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbarLinks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbarRRSS{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-item{
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filosofia-container {
+        background-color: #EEF1E2;
+        padding: 1rem 2rem;
+    }
+
+    #introduccion{
+        width: 60%;
+        padding-top: 5vh;
+        padding-left: 6vw;
+    }
+
+    .masthead {
+        padding: 0px;
+        height: 90vh;
+        display: flex;
+    }
+
+    #tituloHeader {
+        font-size: 40px;
+        padding-top: 2rem;
+        text-align: start;
+    }
+
+    #parrafoHeader {
+        font-size: 18px;
+        padding-top: 1rem;
+        text-align: start;
+    }
+
+    .filosofia-container h1 {
+        padding: 24px 0px;
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    .filosofia-container p {
+        font-weight: 300;
+        font-size: 0.8rem;
+        line-height: 1.9rem;
+    }
+
+    #h1coleccion {
+        padding: 24px 0px;
+        font-weight: normal;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .newsletter-wrapper {
+        padding: 0px 0px;
+    }
+
+    .newsletter-container {
+        padding-top: 40px; padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .newsletter-title {
+        font-size: 3rem;
+    }
+
+    .newsletter-form {
+        padding: 0px;
+        padding-top: 50px;
+    }
+
+    .newsletter-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-group span {
+        padding-top: 30px;
+    }
+
+    .form-control {
+        min-width: 90%!important;
+        border-top-right-radius: 0.25rem!important;
+        border-bottom-right-radius: 0.25rem!important;
+    }
+
+    .newsletter-button {
+        padding: 3px 30px;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+
+    .footer {
+        padding: 0px 0px;
+    }
+
+    .footer-logo {
+        padding-top: 19px;
+    }
+
+    .footer img {
+        width: 13vh;
+        height: auto;
+        padding-bottom: 0px;
+    }
+
+    .links-container {
+        padding: 12px 0px 24px 0px;
+        width: 90%;
+        font-size: 0.9rem;
+        font-weight: 350;
+    }
+
+    hr.divider {
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+    hr.top {
+        display: block;
+    }
+
+    hr.bottom {
+        display: none;
+    }
+
+    .copyright {
+        padding-bottom: 24px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .modal-img {
+        height: 50vh;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+
+    .subtop-left {
+        position: absolute;
+        top: 20px;
+        left: 4px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 30px;
+        right: 4px;
+        color: white;
+    }
+
+    #Kart {
+      height: 15px;
+    }
+}
+
+/* FIN MQ 992px */
+
+/* INICIO MQ 769 a 610px */
+
+@media screen and (max-width: 769px){
+
+    .masthead{
+        padding: 15px;
+        background-image: url("img/backgroundHeader2.png");
+        background-repeat:no-repeat center center fixed;
+        -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 50rem;
+    }
+
+    .header-text {
+        padding-right: 30vw;
+    }
+
+    #tituloHeader {
+        font-size: 29px;
+        padding-top: 2rem;
+    }
+
+    #parrafoHeader {
+        font-size: 18px;
+        padding-top: 0.5rem;
+    }
+
+
+    .top-left {
+        position: absolute;
+        top: 6px;
+        left: 12px;
+        color: white;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    .subtop-left {
+        position: absolute;
+        top: 40px;
+        left: 12px;
+        color: white;
+        font-size: 27px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 37px;
+        right: 12px;
+        color: white;
+    }
+
+    #Kart {
+      height: 30px;
+    }
+
+    .img-producto {
+        margin-bottom: 24px;
+    }
+}
+
+/* FIN MQ 769 a 610px */
+
+/* INICIO MQ 610 a 541px */
+
+@media screen and (max-width: 610px){
+    #tituloHeader {
+        font-size: 26px;
+        padding-top: 2rem;
+    }
+
+    #parrafoHeader {
+        padding-top: 0.5rem;
+    }
+}
+
+/* FIN MQ 610 a 541 */
+
+/* INICIO MQ 541 a 415 */
+
+@media screen and (max-width: 541px){
+
+    .header-text {
+        padding-right: 30vw;
+    }
+
+    #introduccion{
+        width: 80%;
+    }
+
+    #tituloHeader {
+        font-size: 26px;
+        padding-top: 2rem;
+    }
+
+    #parrafoHeader {
+        font-size: 18px;
+        padding-top: 0.5rem;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 6px;
+        left: 12px;
+        color: white;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    .subtop-left {
+        position: absolute;
+        top: 24px;
+        left: 12px;
+        color: white;
+        font-size: 13px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 33px;
+        right: 12px;
+        color: white;
+    }
+
+    #Kart {
+      height: 18px;
+    }
+}
+
+/* FIN MQ 541 a 415px */
+
+/* INICIO MQ 415px a 360 */
+
+@media screen and (max-width: 415px){
+    .btn-warning {
+        font-size: 14px;
+    }
+
+    #introduccion{
+        padding-top: 3vh;
+        width: 80%;
+    }
+
+    #tituloHeader {
+        font-size: 26px;
+        padding-top: 2rem;
+    }
+
+    #parrafoHeader {
+        padding-top: 0.5rem;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+        color: white;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    .subtop-left {
+        position: absolute;
+        top: 26px;
+        left: 15px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 33px;
+        right: 10px;
+        color: white;
+    }
+
+    #Kart {
+      height: 25px;
+    }
+}
+
+/* FIN MQ 415 a 360px */
+
+/* INICIO MQ 360 a 336px */
+
+@media screen and (max-width: 360px) {
+    .navbar img{
+        max-height: 50%;
+        max-width: 50%;
+        margin-left: 0 ;
+        position: relative;
+    }
+
+    .navbar{
+        flex-direction: column-reverse;
+    }
+
+    .navbar-brand {
+        width: 230px;
+        margin-right: 0px;
+    }
+
+    #navbarResponsive{
+        flex-wrap: nowrap;
+    }
+
+    #introduccion{
+        width: 70%;
+        padding-top: 0vh;
+    }
+
+    .header-text {
+        padding-right: 30vw;
+    }
+
+    #tituloHeader {
+        font-size: 22px;
+        padding-top: 2rem;
+    }
+
+    #parrafoHeader {
+        font-size: 14px;
+        padding-top: 0.5rem;
+    }
+    .top-left {
+        position: absolute;
+        top: 6px;
+        left: 12px;
+        color: white;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+    .subtop-left {
+        position: absolute;
+        top: 24px;
+        left: 12px;
+        color: white;
+        font-size: 13px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 33px;
+        right: 12px;
+        color: white;
+    }
+
+    #Kart {
+      height: 18px;
+    }
+}
+
+/* FIN MQ 360 a 336px */
+
+/* INCIO MQ 336 a end */
+
+@media screen and (max-width: 336px){
+    #introduccion{
+        width: 100%;
+        padding-top: 0vh;
+        padding-right: 20vw;
+    }
+
+    .header-text {
+        padding-right: 30vw;
+    }
+
+    #tituloHeader {
+        font-size: 24px;
+        padding-top: 2rem;
+    }
+
+    #parrafoHeader {
+        font-size: 14px;
+        padding-top: 0.5rem;
+    }
+    
+    .modal-img {
+        height: 40vh;
+    }
+}
+
+/* FIN MQ 336 a end  */
+
+

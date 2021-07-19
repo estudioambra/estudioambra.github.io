@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./img/icons/fontawesome-free-5.15.3-web/css/solid.min.css">
+    <link rel="stylesheet" href="./img/icons/fontawesome-free-5.15.3-web/css/brands.min.css">
+    <link rel="icon" href="img/logo-black.png">
+    <script src="modalContentHandler.js" async></script>
+    <script src="scrollTopButton.js" async></script>
+    <script src="emailValidation.js" async></script>
+    <title>Estudio Ambra</title>
+</head>
+
+<body>
+
+ <!-- Barra de navagación --> 
+ <nav class="navbar navbar-expand-lg navbar-light " id="mainNav">
+    <div class="container-fluid d-flex">
+      <a class="navbar-brand d-flex flex-row" href="#Tienda"><img src="img/logoAmbra.svg" alt="" class="img-fluid d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+            <ul class="navbar-nav d-flex justify-content-between links-container " id="navbarLinks">
+                <li class="nav-item"><a class="nav-link" href="#Filosofía">Filosofía</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Coleccion">Colección</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+            </ul>
+        <div>
+            <ul class="navbar-nav d-flex justify-content-between links-container" id="navbarRRSS">
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Estudio-Ambra-103006838491458" target="_blank"><b class="fab fa-facebook"></b></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/estudioambra/" target="_blank"><b class="fab fa-instagram"></b></a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Introducción -->
+
+<header class="masthead" id="Tienda">
+    <div id="introduccion" style="font-family: 'Gotham'; font-weight: 300; font-style: normal;">
+        <div>
+            <h1 class="text-break" id="tituloHeader">Moda consciente</h1>
+            <h2 id="parrafoHeader">Aspiramos a incentivar un consumo más consciente y considerado, desde la fabricación de las prendas hasta ocupar un lugar perdurable en tu guardarropas. </h2>
+            <h2 id="parrafoHeader">Queremos que puedas usar las prendas en múltiples versiones, y te duren.
+            </h2>
+            <a class="btn btn-warning js-scroll-trigger pull-left" href="#">Ir a la Tienda</a>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Filosofía -->
+      <div class="container filosofia-container" id="Filosofía">
+        <div class="text-center">
+          <h1>Filosofía</h1>
+          <p>Buscamos aplicar los principios básicos de la moda lenta a toda la cadena de producción.
+            <br> Por eso, además de tratar de tener el menor impacto posible en nuestro planeta, dentro de los recursos que tenemos disponibles, creemos que es importante la transparencia en los procesos de cada paso que damos.
+            <br> Abordamos cada uno de estos (elecciones de los materiales, la producción de las prendas, comercialización y venta) desde una mentalidad honesta y orientada a la mejora.
+          </p>
+        </div>  
+</div>
+
+<!-- Sección Productos-->  
+
+<div class="container-fluid coleccion-container" id="Coleccion">
+  <h1 class="text-left" id="h1coleccion">Colección</h1>
+  <div class="container novedades-container" id="contenedorNovedades">
+    
+    <div class="col-lg-6 col-md-6 mb-4" id="div1Productos">
+      <img
+      src="img/colores.JPG"
+        class="img-fluid w-100 shadow-1-strong img-producto"
+        alt=""
+        onclick="setModalSources('img/colores.JPG', 'http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/pantalones/');"
+        data-bs-toggle="modal" 
+        data-bs-target="#productModal"
+        />
+        <div class="top-left">Pantalones</div>
+        <div class="bottom-right"> 
+          <a href="http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/pantalones/">
+            <img src="img/kart.png" id="Kart">
+          </a>
+        </div>   
+      </div>
+      
+      <div class="col-lg-10 col-md-10 mb-4" id="div1Productos">
+        <img
+        src="img/kimonoHueso.jpg"
+        class=" img-fluid w-100 shadow-1-strong img-producto"
+        alt=""
+        data-wow-delay="0.3s"
+        onclick="setModalSources('img/kimonoHueso.jpg', 'http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/remeras/');"
+        data-bs-toggle="modal" 
+        data-bs-target="#productModal"
+        />
+        <div class="top-left">Remeras</div>
+        <div class="bottom-right"> <a href="http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/remeras/"><img src="img/kart.png" id="Kart"></a></div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 mb-4" id="div1Productos">
+        <img
+          src="img/vestidomenta.png" 
+          class="img-fluid w-100 shadow-1-strong img-producto"
+          alt=""
+          onclick='setModalSources("img/vestidomenta.png", "http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/vestidos/");'
+          data-bs-toggle="modal" 
+          data-bs-target="#productModal"
+        />
+        <div class="top-left">Vestidos</div>
+        <div class="bottom-right"> <a href="http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/vestidos/"><img src="img/kart.png" id="Kart"></a></div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4" id="div1Productos">
+        <img
+        src="img/vestidoCamel.jpg"
+        class="img-fluid w-100 shadow-1-strong img-producto" 
+      alt=""
+      onclick="setModalSources('img/vestidoCamel.jpg', 'http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/kimonos/');"
+      data-bs-toggle="modal" 
+      data-bs-target="#productModal"
+    />
+      <div class="top-left">kimonos</div>
+      <div class="bottom-right"> <a href="http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/kimonos/"><img src="img/kart.png" id="Kart"></a></div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 mb-4" id="div1Productos">
+      <img
+        src="img\kimonos.jpg"
+        class="img-fluid w-100 shadow-1-strong img-producto"
+        alt=""
+        onclick="setModalSources('img/kimonos.jpg', 'http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/accesorios/');"
+        data-bs-toggle="modal" 
+        data-bs-target="#productModal"
+      />
+      <div class="top-left">Accesorios</div>
+      <div class="bottom-right"> <a href="http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop/accesorios/"><img src="img/kart.png" id="Kart"></a></div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!-- Modal producto-->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <div class="card">
+        <img id="modalImage" src="img/kimonos.jpg" class="card-img-top modal-img" alt="...">
+        <div class="bottom-modal"> <a id="modalLink" href="http://www.tienda.estudioambra.com.mialias.net/categoria-producto/shop"><img src="img/comprar.png" id="Kart"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter -->
+<div class="newsletter-wrapper" id="Newsletter">
+  <div class="container">
+    <div class="row newsletter-container">
+      <h1 class="pb-3 newsletter-title">¡Suscríbete!</h1>  
+      <div class="col-lg-4 newsletter-text">
+        <p class="mb-0">Registra tu email para recibir las últimas novedades.
+      </p>
+      </div>
+      <div class="col-lg-8 d-flex align-items-center newsletter-form">
+          <div class="input-group newsletter-group">
+            <input id="emailInput" type="email" class="form-control" placeholder="nombre@ambra.com.ar" oninput="validationHandler()">
+            <span class="input-group-btn">
+              <button id="submitButton" class="newsletter-button btn disabled" type="submit">Subscribirme</button>
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer" id="Contacto">
+  <div class="d-flex justify-content-center footer-logo">
+    <img src="img/logo-black.png">
+  </div>
+  <div class="container">
+    <div class="hr-container">
+      <hr class="divider top">
+    </div>
+    <div class="d-flex justify-content-center links-wrapper">
+      <div class="d-flex justify-content-between links-container">
+        <div><a class="link" href=#>Tienda</a></div>
+        <div><a class="link" href="#Filosofía">Filosofía</a></div>
+        <div><a class="link" href="#Coleccion">Colección</a></div>
+        <div><a class="link" href="#Contacto">Contacto</a></div>
+      </div>
+    </div>
+    <div class="hr-container">
+      <hr class="divider bottom">
+    </div>
+    <div class="copyright"></b> &#169  2021. Estudio Ambra. Todos los derechos reservados.</div>
+    <div class="d-flex justify-content-end">
+      <a class="link fab fa-facebook mx-5 fs-2  pb-5 social" href="https://www.facebook.com/Estudio-Ambra-103006838491458" target="_blank""></a>
+      <a class="link fab fa-instagram mx-4 fs-2  pb-5 social" href="https://www.instagram.com/estudioambra/" target="_blank"></a>
+    </div>
+  </div>
+</footer>
+  
+  <button class="scroll-top-button" onclick="scrollToTop()" id="scroll-top-button" title="Ir arriba"><b class="fas fa-chevron-up"></b></button>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script> 
+
+<script>
+  var masonry = new Macy({
+      container: '#contenedorNovedades',
+      trueOrder: false,
+      waitForImages: false,
+      useOwnImageLoader: false,
+      debug: true,
+      mobileFirst: true,
+      columns: 3,
+      margin: {
+          y: 5,
+          x: '2%',
+      },
+      breakAt: {
+          1200: 3,
+          940: 3,
+          730: 3,
+          520: 1,
+          400: 1,
+          300: 1,
+          200: 1,
+          100: 1,
+          10: 1,
+      },
+  });
+</script>
+
+</html>
